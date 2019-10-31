@@ -37,11 +37,12 @@ spring:
 mybatis-plus:
   mapper-locations: classpath:mapper/*Mapper.xml
   configuration:
-    map-underscore-to-camel-case: true
+    map-underscore-to-camel-case: true #返回map类型时下划线怎么转驼峰命名，但是需要resultMap 对应相应的entity类，否则无法转换
 
 logging:
   config:
     classpath: logback.xml
+#保存log文件路径在logback.xml中配置
 
 com:
   sutpc:
